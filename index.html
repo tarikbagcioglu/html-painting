@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Painting</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        height: 3020px;
+        width: 2180px;
+        display: grid;
+        grid-template-columns: repeat(10, 200fr);
+        grid-template-rows: 220fr 100fr 220fr 200fr 200fr 220fr 220fr 220fr 220fr 200fr 200fr 220fr 100fr 220fr;
+        background-color: #303030;
+        gap: 1rem;
+        margin: 0px;
+        padding: 0px;
+        border: 3rem #303030 solid;
+      }
+      .item1 {
+        background-color: #f0f1ec;
+        grid-row: span 3;
+      }
+      .item2 {
+        background-color: #fce54d;
+        grid-column: span 3;
+      }
+      .item3 {
+        background-color: #f0f1ec;
+        grid-column: span 3;
+      }
+      .item4 {
+        background-color: #f0f1ec;
+        grid-column: span 2;
+      }
+      .item5 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item6 {
+        grid-row: span 2;
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item7 {
+        background-color: black;
+        grid-area: 2 / 4 / 4 / 6;
+      }
+      .item8 {
+        grid-column: 6 / 10;
+        grid-row: 2 / 6;
+        background-color: #ed3833;
+      }
+      .item9 {
+        grid-row: span 3;
+        background-color: #f0f1ec;
+      }
+      .item10 {
+        grid-column: span 2;
+        background-color: #fce54d;
+      }
+      .item11 {
+        grid-row: span 2;
+        background-color: black;
+      }
+      .item12 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item13 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+      .item14 {
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item15 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: #ed3833;
+      }
+      .item16 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: #2c81c0;
+      }
+      .item17 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item18 {
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item19 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: #fce54d;
+      }
+      .item20 {
+        grid-row: span 2;
+        background-color: #fce54d;
+      }
+      .item21 {
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item22 {
+        grid-row: span 2;
+        background-color: #fce54d;
+      }
+      .item23 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: #fce54d;
+      }
+      .item24 {
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item25 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item26 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: #ed3833;
+      }
+      .item27 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: #2c81c0;
+      }
+      .item28 {
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item29 {
+        grid-row: span 3;
+        background-color: #f0f1ec;
+      }
+      .item30 {
+        grid-column: span 4;
+        grid-row: span 4;
+        background-color: #2c81c0;
+      }
+      .item31 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item32 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item33 {
+        grid-row: span 2;
+        background-color: black;
+      }
+      .item34 {
+        grid-row: span 2;
+        background-color: #fce54d;
+      }
+      .item35 {
+        background-color: #fce54d;
+      }
+      .item36 {
+        background-color: black;
+      }
+      .item37 {
+        grid-row: span 2;
+        grid-column: span 2;
+        background-color: black;
+      }
+      .item38 {
+        grid-row: span 2;
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item39 {
+        grid-row: span 3;
+        background-color: #f0f1ec;
+      }
+      .item40 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+      .item41 {
+        grid-column: span 2;
+        background-color: #f0f1ec;
+      }
+      .item42 {
+        grid-column: span 3;
+        background-color: #f0f1ec;
+      }
+      .item43 {
+        grid-column: span 3;
+        background-color: #fce54d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1 box"></div>
+      <div class="item2 box"></div>
+      <div class="item3 box"></div>
+      <div class="item4 box"></div>
+      <div class="item5 box"></div>
+      <div class="item6 box"></div>
+      <div class="item7 box"></div>
+      <div class="item8 box"></div>
+      <div class="item9 box"></div>
+      <div class="item10 box"></div>
+      <div class="item11 box"></div>
+      <div class="item12 box"></div>
+      <div class="item13 box"></div>
+      <div class="item14 box"></div>
+      <div class="item15 box"></div>
+      <div class="item16 box"></div>
+      <div class="item17 box"></div>
+      <div class="item18 box"></div>
+      <div class="item19 box"></div>
+      <div class="item20 box"></div>
+      <div class="item21 box"></div>
+      <div class="item22 box"></div>
+      <div class="item23 box"></div>
+      <div class="item24 box"></div>
+      <div class="item25 box"></div>
+      <div class="item26 box"></div>
+      <div class="item27 box"></div>
+      <div class="item28 box"></div>
+      <div class="item29 box"></div>
+      <div class="item30 box"></div>
+      <div class="item31 box"></div>
+      <div class="item32 box"></div>
+      <div class="item33 box"></div>
+      <div class="item34 box"></div>
+      <div class="item35 box"></div>
+      <div class="item36 box"></div>
+      <div class="item37 box"></div>
+      <div class="item38 box"></div>
+      <div class="item39 box"></div>
+      <div class="item40 box"></div>
+      <div class="item41 box"></div>
+      <div class="item42 box"></div>
+      <div class="item43 box"></div>
+    </div>
+  </body>
+</html>
